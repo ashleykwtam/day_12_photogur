@@ -11,6 +11,9 @@ Rails.application.routes.draw do
     patch 'pictures/:id' => "pictures#update"
 
     get 'pictures/:id' => 'pictures#show'
+
+    delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
+  
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
